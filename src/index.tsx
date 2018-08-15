@@ -25,10 +25,10 @@ function sendToGA(page: string): void {
 }
 
 type Location = {
-
   pathname: string,
   search: string
 };
+
 const getPageFromLocation = ({ pathname, search }: Location): string => pathname + search;
 
 type GASenderProps = {

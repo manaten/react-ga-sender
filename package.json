@@ -9,7 +9,8 @@
     "prepublish": "run-s build",
     "type-check": "tsc --noEmit",
     "lint-staged": "lint-staged -c ./node_modules/@manaten/frontend-dev-tools/.lintstagedrc",
-    "build": "run-s build:*",
+    "build": "run-s clean build:*",
+    "clean": "rm -rf lib",
     "build:dts": "tsc --emitDeclarationOnly",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\""
   },
