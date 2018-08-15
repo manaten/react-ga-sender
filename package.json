@@ -42,6 +42,10 @@
   },
   "eslintConfig": {
     "parser": "typescript-eslint-parser",
-    "extends": "./node_modules/@manaten/frontend-dev-tools/.eslintrc"
+    "extends": "./node_modules/@manaten/frontend-dev-tools/.eslintrc",
+    "rules": {
+      "no-undef": 0,
+      "no-unused-vars": 0
+    }
   }
 }

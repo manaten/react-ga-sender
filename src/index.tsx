@@ -25,6 +25,7 @@ function sendToGA(page: string): void {
 }
 
 type Location = {
+
   pathname: string,
   search: string
 };
