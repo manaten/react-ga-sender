@@ -1,0 +1,47 @@
+{
+  "name": "@manaten/react-ga-sender",
+  "version": "1.0.0",
+  "description": "Simple google analytics sender component for React.",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "run-s lint-staged type-check",
+    "type-check": "tsc --noEmit",
+    "lint-staged": "lint-staged -c ./node_modules/@manaten/frontend-dev-tools/.lintstagedrc",
+    "build": "run-s build:*",
+    "build:dts": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/manaten/react-ga-sender.git"
+  },
+  "keywords": [
+    "react",
+    "ga"
+  ],
+  "author": "manaten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manaten/react-ga-sender/issues"
+  },
+  "homepage": "https://github.com/manaten/react-ga-sender#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/preset-react": "^7.0.0-rc.1",
+    "@babel/preset-typescript": "^7.0.0-rc.1",
+    "@manaten/frontend-dev-tools": "git+https://github.com/manaten/frontend-dev-tools.git",
+    "@types/react": "^16.4.10",
+    "npm-run-all": "^4.1.3",
+    "typescript": "^3.0.1",
+    "typescript-eslint-parser": "^18.0.0"
+  },
+  "peerDependencies": {
+    "react": ">= 16"
+  },
+  "eslintConfig": {
+    "parser": "typescript-eslint-parser",
+    "extends": "./node_modules/@manaten/frontend-dev-tools/.eslintrc"
+  }
+}
