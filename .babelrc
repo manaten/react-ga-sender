@@ -5,9 +5,7 @@
     [
       "@babel/env",
       {
-        "modules": false,
-        "loose": true,
-        "useBuiltIns": "entry",
+        "modules": "commonjs",
         "targets": {
           "browsers": [
             "last 2 Chrome versions",

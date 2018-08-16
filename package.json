@@ -2,8 +2,8 @@
   "name": "@manaten/react-ga-sender",
   "version": "1.0.0",
   "description": "Simple google analytics sender component for React.",
-  "main": "./lib/main.js",
-  "types": "./lib/main.d.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "precommit": "run-s lint-staged type-check",
     "prepublish": "run-s build",
