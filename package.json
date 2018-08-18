@@ -6,7 +6,7 @@
   "types": "./lib/index.d.ts",
   "scripts": {
     "precommit": "run-s lint-staged type-check",
-    "prepublish": "run-s build",
+    "prepublishOnly": "run-s build",
     "type-check": "tsc --noEmit",
     "lint-staged": "lint-staged -c ./node_modules/@manaten/frontend-dev-tools/.lintstagedrc",
     "build": "run-s clean build:*",
