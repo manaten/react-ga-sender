@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-if (typeof window === 'object') {
+if (typeof window === 'object' && typeof document === 'object') {
   // https://developers.google.com/analytics/devguides/collection/analyticsjs/
   /* eslint-disable */
   (function(i: any, s: any, o: string, g: string, r: string) {
@@ -29,7 +29,7 @@ function getGATrackerName(trackingId: string): string {
 }
 
 function sendToGA(page: string, trackerName: string): void {
-  (window as any).ga(`${trackerName}.set`, 'page', page, trackerName);
+  (window as any).ga(`${trackerName}.set`, 'page', page);
   (window as any).ga(`${trackerName}.send`, 'pageview');
 }
 
@@ -40,7 +40,7 @@ type Location = {
 
 const getPageFromLocation = ({ pathname, search }: Location): string => pathname + search;
 
-type GASenderProps = {
+export type GASenderProps = {
   trackingId: string,
   location: Location
 };
