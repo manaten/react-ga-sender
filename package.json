@@ -1,6 +1,6 @@
 {
   "name": "@manaten/react-ga-sender",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Simple google analytics sender component for React.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -20,9 +20,11 @@
   },
   "keywords": [
     "react",
-    "ga"
+    "component",
+    "ga",
+    "google-analytics"
   ],
-  "author": "manaten",
+  "author": "manaten<manaten@manaten.net>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/manaten/react-ga-sender/issues"
